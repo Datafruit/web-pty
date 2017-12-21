@@ -83,11 +83,11 @@ const resCache = {
  * @param type 资源类型
  */
 function resof(type: string) {
-	resCache.pty = ''
-	resCache.socket = ''
-	resCache.style = ''
-	resCache.terminal = ''
-	if (type == 'pty') execSync('npm run build', { env: process.env, cwd: path.join(__dirname, './../') })
+	// resCache.pty = ''
+	// resCache.socket = ''
+	// resCache.style = ''
+	// resCache.terminal = ''
+	// if (type == 'pty') execSync('npm run build', { env: process.env, cwd: path.join(__dirname, './../') })
 	
 	let str: string = ''
 	let mime: string = ''

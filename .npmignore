@@ -1,0 +1,7 @@
+/src
+/test
+/node_modules
+/tsconfig.json
+/res/tty.css
+/res/xterm.css
+/res/xterm.js
