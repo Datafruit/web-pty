@@ -1,8 +1,8 @@
 {
   "name": "web-pty",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "tsc && cd test && node index.js",
     "build": "tsc && uglifyjs dist/browser/tty.js -o dist/browser/tty.min.js && uglifyjs res/xterm.js -o res/xterm.min.js && cleancss -o res/tty.min.css res/tty.css && cleancss -o res/xterm.min.css res/xterm.css"
