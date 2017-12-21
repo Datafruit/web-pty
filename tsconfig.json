@@ -52,6 +52,7 @@
 		"test",
 		"dist",
 		"node_modules",
-		"res"
+		"res",
+		"img"
 	]
 }

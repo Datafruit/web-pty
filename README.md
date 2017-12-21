@@ -2,6 +2,10 @@
 
 web-pty是一个浏览器端的ssh工具，通过此工具，可以在浏览器中远程连接到linux服务器并进行管理，同时web-pty支持express和koa框架
 
+![登录界面](https://github.com/kangkang520/web-pty/blob/master/img/pty1.png?raw=true)
+![输入密码界面](https://github.com/kangkang520/web-pty/blob/master/img/pty2.png?raw=true)
+![操作界面](https://github.com/kangkang520/web-pty/blob/master/img/pty3.png?raw=true)
+
 ## 安装
 ```
 npm install --save web-pty
