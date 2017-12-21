@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+/test
+/dist
+tty.min.css
+xterm.min.css
+xterm.min.js
+.DS_Store

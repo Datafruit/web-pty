@@ -1,0 +1,23 @@
+{
+  "name": "web-pty",
+  "version": "1.2.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && cd test && node index.js",
+    "build": "tsc && uglifyjs dist/browser/tty.js -o dist/browser/tty.min.js && uglifyjs res/xterm.js -o res/xterm.min.js && cleancss -o res/tty.min.css res/tty.css && cleancss -o res/xterm.min.css res/xterm.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-pty": "^0.7.4",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.1",
+    "@types/socket.io": "^1.4.31",
+    "clean-css-cli": "^4.1.10",
+    "uglify-js": "^3.2.2"
+  }
+}

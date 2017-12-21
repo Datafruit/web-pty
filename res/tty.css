@@ -1,0 +1,107 @@
+.webpty-container div::-webkit-scrollbar-track-piece {
+	width: 10px;
+	background: transparent
+}
+
+.webpty-container div::-webkit-scrollbar {
+	width: 10px;
+	height: 10px
+}
+
+.webpty-container div::-webkit-scrollbar-thumb {
+	height: 10px;
+	background: #009688;
+}
+
+.webpty-login-body {
+	background: #FAFAFA;
+}
+
+.webpty-login-title {
+	color: #000;
+	font-size: 20px;
+	line-height: 60px;
+	border-bottom: 1px dotted #9E9E9E;
+	text-align: center;
+}
+
+.webpty-login-label {
+	color: #000;
+}
+
+.webpty-login-btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.webpty-login-btn:hover {
+	color: #fff;
+	background-color: #286090;
+	border-color: #204d74;
+	text-decoration: none;
+}
+
+.webpty-login-btn:active {
+	color: #fff;
+	background-color: #286090;
+	border-color: #204d74;
+	outline: 0;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.webpty-login-input {
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	box-sizing: border-box;
+}
+
+.webpty-login-input:focus {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.webpty-toast {
+	width: 200px;
+	height: 36px;
+	top: 0;
+	transform: translateY(-36px);
+	position: absolute;
+	background: #b71c1c;
+	color: #FFF;
+	text-align: center;
+	white-space: nowrap;
+	line-height: 36px;
+	transition: all .6s;
+	opacity: .3;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
