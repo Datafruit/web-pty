@@ -1,14 +1,14 @@
 {
   "name": "web-pty",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "tsc && cd test && node index.js",
     "build": "tsc && uglifyjs dist/browser/tty.js -o dist/browser/tty.min.js && uglifyjs res/xterm.js -o res/xterm.min.js && cleancss -o res/tty.min.css res/tty.css && cleancss -o res/xterm.min.css res/xterm.css"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["web", "pty", "tty", "terminal", "term", "shel", "ssh", "scp", "linux", "command", "shell", "exec", "browser", "express", "koa", "web-pty", "xshell", "secure", "openssh", "socket", "websocket", "socket.io"],
+  "author": "yizhi",
   "license": "ISC",
   "dependencies": {
     "node-pty": "^0.7.4",
