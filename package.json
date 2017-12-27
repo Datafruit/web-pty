@@ -1,23 +1,49 @@
 {
-  "name": "web-pty",
-  "version": "1.2.4",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "tsc && cd test && node index.js",
-    "build": "tsc && uglifyjs dist/browser/tty.js -o dist/browser/tty.min.js && uglifyjs res/xterm.js -o res/xterm.min.js && cleancss -o res/tty.min.css res/tty.css && cleancss -o res/xterm.min.css res/xterm.css"
-  },
-  "keywords": ["web", "pty", "tty", "terminal", "term", "shel", "ssh", "scp", "linux", "command", "shell", "exec", "browser", "express", "koa", "web-pty", "xshell", "secure", "openssh", "socket", "websocket", "socket.io"],
-  "author": "yizhi",
-  "license": "ISC",
-  "dependencies": {
-    "node-pty": "^0.7.4",
-    "socket.io": "^2.0.4"
-  },
-  "devDependencies": {
-    "@types/node": "^8.5.1",
-    "@types/socket.io": "^1.4.31",
-    "clean-css-cli": "^4.1.10",
-    "uglify-js": "^3.2.2"
-  }
+	"name": "web-pty",
+	"version": "1.2.5",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "tsc && cd test && node index.js",
+		"build": "tsc && uglifyjs dist/browser/tty.js -o dist/browser/tty.min.js && uglifyjs res/xterm.js -o res/xterm.min.js && cleancss -o res/tty.min.css res/tty.css && cleancss -o res/xterm.min.css res/xterm.css"
+	},
+	"repository": {
+		"url": "https://github.com/kangkang520/web-pty.git"
+	},
+	"keywords": [
+		"web",
+		"pty",
+		"tty",
+		"terminal",
+		"term",
+		"shel",
+		"ssh",
+		"scp",
+		"linux",
+		"command",
+		"shell",
+		"exec",
+		"browser",
+		"express",
+		"koa",
+		"web-pty",
+		"xshell",
+		"secure",
+		"openssh",
+		"socket",
+		"websocket",
+		"socket.io"
+	],
+	"author": "yizhi",
+	"license": "ISC",
+	"dependencies": {
+		"node-pty": "^0.7.4",
+		"socket.io": "^2.0.4"
+	},
+	"devDependencies": {
+		"@types/node": "^8.5.1",
+		"@types/socket.io": "^1.4.31",
+		"clean-css-cli": "^4.1.10",
+		"uglify-js": "^3.2.2"
+	}
 }
