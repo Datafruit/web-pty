@@ -48,8 +48,9 @@ const configs: ConfigOption = {
  * 創建一個tty
  * @param server http或https服務器
  */
-function mkpty(server: Server) {
-	io(server).on('connection', socket => {
+function mkpty(server: Server, ioServerInstance: io.Server) {
+  const _ioServer = ioServerInstance || io(server)
+	_ioServer.on('connection', socket => {
 		const send = (id: number, type: string, msg: any = {}) => socket.emit(type, { id, msg })
 		//tty
 		let ttys: { [i: number]: TTY } = {}

@@ -1,15 +1,15 @@
 import * as pty from 'node-pty'
-import { ITerminal } from 'node-pty/lib/interfaces';
+// import { ITerminal } from 'node-pty/lib/interfaces';
 import * as io from 'socket.io'
 
 export default class TTY {
 
 	//连接
-	private tty: ITerminal
+	private tty: any
 	private sock: any
 
-	public ondata: (...args: Array<any>) => any
-	public onclose: (...args: Array<any>) => any
+	public ondata!: (...args: Array<any>) => any;
+	public onclose!: (...args: Array<any>) => any;
 
 	/**
 	 * 創建一個tty
@@ -22,7 +22,7 @@ export default class TTY {
 			cwd: process.env.HOME,
 			env: process.env as any
 		})
-		this.tty.on('data', (...data) => {
+		this.tty.on('data', (...data: any) => {
 			this.ondata && this.ondata(...data)
 		})
 		this.tty.on('close', () => {

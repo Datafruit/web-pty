@@ -1,5 +1,6 @@
 import * as http from 'http'
 import * as https from 'https'
+import * as io from 'socket.io'
 
 type ConfigOption = {
 	allowLocal?: boolean				//是否允许本地主机
@@ -27,7 +28,7 @@ declare namespace web_pty {
 	 * 創建pty
 	 * @param server http或https服務器
 	 */
-	export function mkpty(server: http.Server | https.Server): any
+	export function mkpty(server: http.Server | https.Server, ioServer: io.Server): any
 
 	/**
 	 * 靜態資源中間件

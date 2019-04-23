@@ -113,7 +113,10 @@ type CharState = {
 			//清空內容
 			dom.innerHTML = ''
 			//獲取tty名稱
-			this._name = dom.getAttribute('tty') || ''
+      this._name = dom.getAttribute('tty') || ''
+      this.inputs = {} as any
+      this.loginBtn = null as any
+      this.loginDom = null as any
 			this.iconColor = dom.getAttribute('icon-color') || this.iconColor
 			//設置padding為0
 			css(dom, { padding: '0', overflow: 'hidden', minWidth: '480px', minHeight: '320px' })
