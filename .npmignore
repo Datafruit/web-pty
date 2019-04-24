@@ -7,3 +7,4 @@
 /res/xterm.js
 /img
 yarn.lock
+*.tar.gz
